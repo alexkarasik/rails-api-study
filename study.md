@@ -41,7 +41,7 @@ In your own words, define what the responsibilities of the model layer are in
 Rails.
 
 ```md
-<!-- your answer here -->
+The model handles data requests from the controller and returns the data to the controller. 
 ```
 
 ## Define Controller Responsiblities
@@ -50,7 +50,7 @@ In your own words, define what the responsibilities of the controller layer are
 in Rails.
 
 ```md
-<!-- your answer here -->
+The controller takes the data from the model and puts it in the view. You only manipulate data in the controllers.
 ```
 
 ## Define Router Responsiblities
@@ -58,7 +58,9 @@ in Rails.
 In your own words, define what the router does in Rails.
 
 ```md
-<!-- your answer here -->
+When a web browser makes a request, a router component checks the router file to chose which controller it will use to handle the request based on the web request and HTTP protocol.
+
+I used: https://www.quora.com/Whats-the-easiest-way-to-explain-RailsMVC-structure
 ```
 
 ## The Request-Response Cycle in Rails
@@ -67,5 +69,6 @@ Starting with a client making a GET request to a particular URL, describe how
 the parts of Rails interact to produce and send a response.
 
 ```md
-<!-- your answer here -->
+A get request starts at the web browser and a router will check a router file to determine which controller it should use to handle the get request. The controller will then get the requested data from a model, then the controller will return a response with JSon data from the model with a view component that displays the data in an HTML file that is assembled by controller.
+https://www.quora.com/Whats-the-easiest-way-to-explain-RailsMVC-structure
 ```
